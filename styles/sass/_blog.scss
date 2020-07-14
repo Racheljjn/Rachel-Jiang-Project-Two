@@ -1,0 +1,166 @@
+$primary: #0c1423;
+$second: #86e0f9;
+$third: #0f614e;
+.navbar {
+  background-image: url(../assets/blog-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary;
+  .flexitem1 {
+    margin: 100px 80px 700px 100px;
+    width: calc(35% - 80px);
+    display: flex;
+    flex-direction: column;
+    background-color: $third;
+    .shark {
+      margin: -15px 15px 15px -100px;
+    }
+  }
+}
+.first,
+.second {
+  width: 80%;
+  margin: 10px 20px 40px 25px;
+}
+.first {
+  p {
+    font-size: 13px;
+    line-height: 1.5rem;
+  }
+}
+.second {
+  li {
+    list-style-type: disc;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-left: 16px;
+    p {
+      font-size: 13px;
+      line-height: 1.5rem;
+    }
+  }
+}
+.flexitem2 {
+  width: 65%;
+}
+
+.articles {
+  border-bottom: solid 2px $second;
+  border-left: solid 2px $second;
+  padding: 50px 100px 50px 50px;
+  h3 {
+    text-align: left;
+  }
+  p {
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 1rem;
+  }
+}
+.articles{
+  .high{
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+}
+.coral {
+  margin-top: -180px;
+  // padding:0 0 25px 25px;
+  background-color: $second;
+  img {
+    height: auto;
+  }
+}
+.feedback {
+  padding: 30px;
+  .comments {
+    p {
+      width: 60%;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+.flex-children {
+  input[type="text"] {
+    background-color: $primary;
+  }
+  input[type="email"] {
+    background-color: $primary;
+  }
+}
+
+.feedback {
+  textarea {
+    background-color: $primary;
+  }
+}
+.feedback {
+  input[type="submit"] {
+    background-color: $third;
+  }
+}
+.comments {
+  padding: 30px 50px;
+  h3 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  p {
+    width: 80%;
+  }
+  span {
+    display: block;
+  }
+}
+.form {
+  margin-top: 50px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex-wrap: wrap;
+    .flexitem1 {
+      width: 100%;
+      margin-bottom: 250px;
+      .shark {
+        margin: 0;
+      }
+    }
+    .flexitem2 {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .container{
+    .flexitem1{
+      margin: 0;
+      margin-bottom: 150px;
+    }
+  }
+  .articles{
+    padding: 10px;
+    h3,p{
+      text-align: center;
+    }
+  }
+  .feedback{
+    .comments{
+      padding: 10px;
+      p{
+        width: 100%;
+      }
+    }
+  }
+    
+  
+  
+}
